@@ -7,14 +7,25 @@
     box-sizing: border-box;
 }
 
+.drop-shadow{
+    box-shadow: 1px 1px 5px rgb(46, 46, 46);
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-light);
     background-color: var(--color-primary);
+    text-align: center;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 img{
@@ -25,7 +36,19 @@ img{
 .grid-container{
     width: 100%;
     min-height: 100vh;
+    padding: 2.375em;
     background:url(../images/bg-mobile.svg) no-repeat;
+    background-size: 100%;
+}
+
+main{
+    p{
+        margin: 1.7em auto;
+    }
+}
+
+.brand{
+    text-align: left;
 }
 
 .attribution { 
@@ -34,7 +57,8 @@ img{
 }
 
 .button{
-    padding: 1em 5em;
+    padding: .8rem 5em;
+    max-width: 12.6rem;
     border-radius: 2em;
     border-style: none;
     color: var(--color-primary);
@@ -42,16 +66,28 @@ img{
 }
 
 .social-links{
+    margin-top: 3.8rem;
     li{
         display: inline-block;
-        margin: .5em;
+        margin: .3em;
         width: 2em;
         height: 2em;
         text-align: center;
         border: 1px solid var(--color-light);
         border-radius: 50%;
     }
-    // ion-icon{
-    //     al
-    // }
+    ion-icon{
+        vertical-align: bottom;
+    }
 }
+
+.img-logo{
+    width: 7.5rem;
+}
+
+.eye-candy{
+    margin: 3.2em 0;
+}
+//doc
+//side margin 2.5em
+//top margin 4.8125em
