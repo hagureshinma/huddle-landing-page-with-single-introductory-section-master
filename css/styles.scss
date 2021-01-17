@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 1.5em;
+    font-size: clamp(1.5em, 3.5vw, 2.25em);
     font-weight: 700;
 }
 
@@ -33,9 +33,11 @@ img{
     height: auto;
 }
 
-.grid-container{
+.main-container{
     width: 100%;
     min-height: 100vh;
+    max-width: 1282px;
+    margin: auto;
     padding: 2.375em;
     background:url(../images/bg-mobile.svg) no-repeat;
     background-size: 100%;
@@ -88,6 +90,18 @@ main{
 .eye-candy{
     margin: 3.2em 0;
 }
-//doc
-//side margin 2.5em
-//top margin 4.8125em
+
+.button--hover:hover{
+        background-color: var(--color-secondary);
+        color: var(--color-light);
+        cursor: pointer;
+}
+
+.socials--hover:hover{
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    cursor: pointer;
+
+}
+
+@import 'media-queries';

@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: clamp(1.5em, 3.5vw, 2.25em);
   font-weight: 700;
 }
 
@@ -38,9 +38,11 @@ img {
   height: auto;
 }
 
-.grid-container {
+.main-container {
   width: 100%;
   min-height: 100vh;
+  max-width: 1282px;
+  margin: auto;
   padding: 2.375em;
   background: url(../images/bg-mobile.svg) no-repeat;
   background-size: 100%;
@@ -96,5 +98,65 @@ main p {
 
 .eye-candy {
   margin: 3.2em 0;
+}
+
+.button--hover:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.socials--hover:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .main-container {
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-size: contain;
+  }
+  .img-logo {
+    width: 12.5rem;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    text-align: left;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .eye-candy {
+    margin-bottom: 0;
+  }
+  .button {
+    font-size: 1em;
+    padding: .8rem 3em;
+  }
+  .social-links {
+    margin-top: 1.5em;
+    text-align: right;
+  }
+  .social-links li {
+    width: 2.6em;
+    height: 2.6em;
+  }
+  .social-links li ion-icon {
+    font-size: 1.5em;
+    margin-top: .4375rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    -ms-grid-columns: 60% 1fr;
+        grid-template-columns: 60% 1fr;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
