@@ -45,6 +45,7 @@ img{
 
 main{
     p{
+        // font-size: 1.1em;
         margin: 1.7rem auto;
     }
 }
@@ -77,6 +78,9 @@ main{
         text-align: center;
         border: 1px solid var(--color-light);
         border-radius: 50%;
+    }
+    a{
+        color: var(--color-light);
     }
     ion-icon{
         vertical-align: bottom;

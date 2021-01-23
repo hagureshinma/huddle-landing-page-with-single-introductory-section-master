@@ -88,6 +88,10 @@ main p {
   border-radius: 50%;
 }
 
+.social-links a {
+  color: var(--color-light);
+}
+
 .social-links ion-icon {
   vertical-align: bottom;
 }
@@ -137,12 +141,11 @@ main p {
     font-size: 1.07em;
   }
   .eye-candy {
-    width: 94%;
+    width: 93%;
     margin: 5em 0 0 0;
   }
   .button {
-    font-size: 1em;
-    padding: 1rem 4.2rem;
+    padding: .8rem 4.2rem;
   }
   .social-links {
     margin-top: 0;
